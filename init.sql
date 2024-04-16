@@ -1,4 +1,4 @@
-create table products(id int, title text);
+create table products(id int primary key, title text, UNIQUE(title));
 INSERT INTO PRODUCTS VALUES(1, "acoustic-transport");
 INSERT INTO PRODUCTS VALUES(2, "outgoing-tramp");
 INSERT INTO PRODUCTS VALUES(3, "tearful-pickle");
