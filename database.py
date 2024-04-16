@@ -23,5 +23,5 @@ def add_product(db_connection, product: Product):
         db_connection.commit()
         return True
     # NIY replace with sqlite3.IntegrityError
-    except Exception as e:
+    except:
         return False
