@@ -1,0 +1,6 @@
+rulesets:
+  - python-best-practices
+  - python-code-style
+  - python-inclusive
+  - python-design
+  - python-security
