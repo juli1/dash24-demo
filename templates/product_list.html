@@ -1,0 +1,21 @@
+<html>
+    <body>
+        {% block content %}
+            <h1>Product List</h1>
+            <ul>
+                {% for product in products %}
+                <li>{{ product.name }} </li>
+                {% endfor %}
+            </ul>
+        {% endblock %}
+        
+        {% if offset > 0 %}
+        <a href="/product/list?offset={{ offset - limit }}">Previous page</a>
+        {% endif %}
+        
+        {% if products|length == limit %}
+        <a href="/product/list?offset={{ offset + limit }}">Next Page</a>
+        {% endif %}
+    </body>
+</html>
+

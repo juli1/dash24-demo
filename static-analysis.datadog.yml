@@ -4,3 +4,4 @@ rulesets:
   - python-inclusive
   - python-design
   - python-security
+  - python-flask
